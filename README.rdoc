@@ -1,27 +1,25 @@
 == README
 
-```bash
-$ bundle exec rake test:benchmark
-Run options: --seed 16351
+           $ bundle exec rake test:benchmark
+           Run options: --seed 16351
 
-# Running:
+           # Running:
 
-UserModelTest#test_password_stretching_in_background (7 ms warmup)
-           wall_time: 1 ms
-              memory: unsupported
-             objects: unsupported
-             gc_runs: 0
-             gc_time: 0 ms
-.UserModelTest#test_password_stretching_inline (71.37 sec warmup)
-           wall_time: 70.86 sec
-              memory: unsupported
-             objects: unsupported
-             gc_runs: 0
+           UserModelTest#test_password_stretching_in_background (7 ms warmup)
+                      wall_time: 1 ms
+                         memory: unsupported
+                        objects: unsupported
+                        gc_runs: 0
+                        gc_time: 0 ms
+           .UserModelTest#test_password_stretching_inline (71.37 sec warmup)
+                      wall_time: 70.86 sec
+                        memory: unsupported
+                        objects: unsupported
+                        gc_runs: 0
 
-             gc_time: 0 ms
-.
+                        gc_time: 0 ms
+           .
 
-Finished in 929.820635s, 0.0022 runs/s, 0.0000 assertions/s.
+           Finished in 929.820635s, 0.0022 runs/s, 0.0000 assertions/s.
 
-2 runs, 0 assertions, 0 failures, 0 errors, 0 skips
-```
+           2 runs, 0 assertions, 0 failures, 0 errors, 0 skips
