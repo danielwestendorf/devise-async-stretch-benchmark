@@ -6,8 +6,17 @@ class UserModelTest < ActionDispatch::PerformanceTest
     User.all.destroy_all
   end
 
-  test "password salt" do
+  test "password stretching inline" do
+    Devise::Async::Stretch.enabled = false
+
     user = User.new(email: 'bob@example.com')
+    user.password = "ReallyCompleXPassword"
+  end
+
+  test "password stretching in background" do
+    Devise::Async::Stretch.enabled = true
+
+    user = User.new(email: 'bob2@example.com')
     user.password = "ReallyCompleXPassword"
   end
 end

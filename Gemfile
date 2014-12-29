@@ -42,3 +42,6 @@ gem 'devise'
 
 gem 'rails-perftest'
 gem 'ruby-prof'
+
+gem 'devise-async-stretch', github: 'danielwestendorf/devise-async-stretch'
+gem 'sidekiq'
