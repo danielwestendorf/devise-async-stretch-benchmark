@@ -1,28 +1,27 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+$ bundle exec rake test:benchmark
+Run options: --seed 16351
 
-Things you may want to cover:
+# Running:
 
-* Ruby version
+UserModelTest#test_password_stretching_in_background (7 ms warmup)
+           wall_time: 1 ms
+              memory: unsupported
+             objects: unsupported
+             gc_runs: 0
+             gc_time: 0 ms
+.UserModelTest#test_password_stretching_inline (71.37 sec warmup)
+           wall_time: 70.86 sec
+              memory: unsupported
+             objects: unsupported
+             gc_runs: 0
 
-* System dependencies
+             gc_time: 0 ms
+.
 
-* Configuration
+Finished in 929.820635s, 0.0022 runs/s, 0.0000 assertions/s.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+2 runs, 0 assertions, 0 failures, 0 errors, 0 skips
+```
