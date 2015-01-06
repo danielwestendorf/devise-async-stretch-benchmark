@@ -94,7 +94,7 @@ Devise.setup do |config|
   # a value less than 10 in other environments. Note that, for bcrypt (the default
   # encryptor), the cost increases exponentially with the number of stretches (e.g.
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
-  config.stretches = 20
+  config.stretches = 10
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = '54b13fefe5067b35d4d9ab413aacd050af4a637e5fa659dd89d3ae63b0c1829c03d43866e8458fc789d4e6e74bc65d62230d4216e3eddb9e4b502457ead119f2'

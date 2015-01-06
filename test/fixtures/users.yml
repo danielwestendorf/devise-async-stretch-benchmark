@@ -4,10 +4,10 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one:
+jane:
   email: 'jane@example.com'
   encrypted_password: '$2a$10$yrSlbJSlwtowpAd4eqB7YeylcUO8.6KoZgS1/GwyXwbkAsaW8/gWO'
 
-two:
+john:
   email: 'john@example.com'
-  encrypted_password: '$2a$10$yrSlbJSlwtowpAd4eqB7YeylcUO8.6KoZgS1/GwyXwbkAsaW8/gWO'
+  encrypted_password: '$2a$20$X.rsav0LKUz6gl/rSfsL2eBbNkxt.TXWJk08fWLdxwbZH7O6BeDlS'
